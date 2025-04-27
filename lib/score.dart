@@ -26,7 +26,7 @@ class Score extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "All done!",
+                      "Terminé!",
                       style:
                           Theme.of(context).textTheme.headlineLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.primary,
@@ -34,7 +34,7 @@ class Score extends StatelessWidget {
                     ),
                     const SizedBox(height: 32),
                     Text(
-                      "Your score:",
+                      "Ton score:",
                       style: Theme.of(context).textTheme.bodyLarge,
                     ),
                     const SizedBox(height: 16),
@@ -47,7 +47,7 @@ class Score extends StatelessWidget {
               ),
               FilledButton(
                 onPressed: onStartOver,
-                child: const Text("Start over"),
+                child: const Text("Recommencer"),
               ),
             ],
           ),

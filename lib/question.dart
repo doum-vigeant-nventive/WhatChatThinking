@@ -86,7 +86,7 @@ class _QuestionState extends State<Question> {
                       style: FilledButton.styleFrom(
                         backgroundColor: _happyButtonColor,
                       ),
-                      child: const Text("Happy 😁"),
+                      child: const Text("Content 😁"),
                     ),
                   ),
                   const SizedBox(width: 16),
@@ -98,7 +98,7 @@ class _QuestionState extends State<Question> {
                       style: FilledButton.styleFrom(
                         backgroundColor: _madButtonColor,
                       ),
-                      child: const Text("Mad 😠"),
+                      child: const Text("Fâché 😠"),
                     ),
                   ),
                 ],
