@@ -65,6 +65,7 @@ class _QuestionState extends State<Question> {
           constraints: const BoxConstraints(maxWidth: 600),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
+            spacing: 16,
             children: [
               Expanded(
                 child: ClipRRect(
@@ -75,8 +76,8 @@ class _QuestionState extends State<Question> {
                   ),
                 ),
               ),
-              const SizedBox(height: 16),
               Row(
+                spacing: 16,
                 children: [
                   Expanded(
                     child: FilledButton(
@@ -89,7 +90,6 @@ class _QuestionState extends State<Question> {
                       child: const Text("Content 😁"),
                     ),
                   ),
-                  const SizedBox(width: 16),
                   Expanded(
                     child: FilledButton(
                       onPressed: () async {
