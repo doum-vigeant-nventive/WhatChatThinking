@@ -26,7 +26,7 @@ class _QuestionState extends State<Question> {
 
     _setButtonColor(answer, selectedRightAnswer);
     await Future.delayed(const Duration(milliseconds: 500));
-    _resetButtonColor(answer);
+    _resetButtonColor();
     _incrementCounter();
   }
 
@@ -39,12 +39,11 @@ class _QuestionState extends State<Question> {
     }
   }
 
-  void _resetButtonColor(Emotion answer) {
-    if (answer == Emotion.happy) {
-      setState(() => _happyButtonColor = null);
-    } else {
-      setState(() => _madButtonColor = null);
-    }
+  void _resetButtonColor() {
+    setState(() {
+      _happyButtonColor = null;
+      _madButtonColor = null;
+    });
   }
 
   void _incrementCounter() {
